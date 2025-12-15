@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KPRCAS Login</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e6f2ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+    .login-box img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    .login-box h2 {
+      margin: 10px 0;
+      color: #0073e6;
+    }
+    .login-box p {
+      color: #28a745;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-box input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background: #0073e6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-box input[type="submit"]:hover {
+      background: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <img src="kprcas-logo.jpeg" alt="KPRCAS Logo">
+    <h2>KPRCAS</h2>
+    <p>LEARN BEYOND</p>
+    <form action="/login" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+</body>
+</html>
